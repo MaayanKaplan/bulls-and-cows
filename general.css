@@ -1,9 +1,9 @@
 /* REUSABLE CSS */
 :root {
-  --primary-color: #a61e4d;
-  /* --secondary-color: ; */
+  --primary-color: #e64980;
+  --secondary-color: #a61e4d;
   --text-color: #343a40;
-  --background-color: ##ffdeeb;
+  --background-color: #ffdeeb;
 }
 
 html {

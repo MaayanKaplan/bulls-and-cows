@@ -1,9 +1,9 @@
-:root {
+/* :root {
   --primary-color: #e64980;
   --secondary-color: #a61e4d;
   --text-color: #343a40;
   --background-color: #ffdeeb;
-}
+} */
 
 body {
   margin: 0 auto;
@@ -85,16 +85,23 @@ body {
   transform: translateX(0);
 }
 
-.description {
-  margin-top: 183px;
-  color: var(--text-color);
-  font-size: 2rem;
-}
-
 .heading-how {
   font-size: 2.4rem;
   font-weight: 600;
   color: var(--primary-color);
+}
+
+.description {
+  margin-top: 183px;
+  color: var(--text-color);
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.lets {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 2.4rem;
 }
 
 /* MAIN */

@@ -13,6 +13,7 @@ let youWonAnnouncment = document.querySelector("#result");
 let retriesNumber = document.querySelector(".num-tries");
 let restartButton = document.querySelector("#restart");
 
+// OPENS THE HOW-TO-PLAY DESCRIPTION
 howToPlayButton.addEventListener("click", () => {
   headerElement.classList.add("open-description");
 });
@@ -21,19 +22,9 @@ closeButton.addEventListener("click", () => {
   headerElement.classList.remove("open-description");
 });
 
-// generate a 4 digit number
+// GENERATE A 4 DIGIT NUMBER
 const randomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min)) + min;
-};
-
-const removeItem = (str) => {
-  let newStr = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== ",") {
-      newStr += str[i];
-    }
-  }
-  return newStr;
 };
 
 const generateNumber = () => {
@@ -48,6 +39,7 @@ const generateNumber = () => {
   return numbers;
 };
 
+// RESTARTS THE GAME
 const restartGame = () => {
   restartButton.classList.remove("visible");
   restartButton.classList.add("hidden");
@@ -60,23 +52,25 @@ const restartGame = () => {
   usersGuessedNum3.value = "";
   usersGuessedNum4.value = "";
   displayGuessedNum.textContent = "";
+  retriesNumber.textContent = "10";
 
-  removeItem(generateNumber());
+  retries = 0;
+  secretNumber = generateNumber();
+
+  generateNumber();
 };
 
+// START THE GAME WHEN CLICKED ON SUBMIT BUTTON
 let secretNumber = generateNumber();
 let retries = 0;
 submitButton.addEventListener("click", () => {
   let str = "";
   let arr = [];
-  let num1 = Number(usersGuessedNum1.value);
-  let num2 = Number(usersGuessedNum2.value);
-  let num3 = Number(usersGuessedNum3.value);
-  let num4 = Number(usersGuessedNum4.value);
-  arr.push(num1);
-  arr.push(num2);
-  arr.push(num3);
-  arr.push(num4);
+
+  arr.push(Number(usersGuessedNum1.value));
+  arr.push(Number(usersGuessedNum2.value));
+  arr.push(Number(usersGuessedNum3.value));
+  arr.push(Number(usersGuessedNum4.value));
   let usersNumber = arr;
   console.log(secretNumber);
   console.log(usersNumber);
@@ -115,6 +109,7 @@ submitButton.addEventListener("click", () => {
   }
 });
 
+// RESTARTS THE GAME WHEN RESTART BUTTON CLICKED
 restartButton.addEventListener("click", () => {
   restartGame();
 });
