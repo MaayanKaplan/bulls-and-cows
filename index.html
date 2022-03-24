@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Bulls And Cows</title>
+  </head>
+
+  <body>
+    <header class="header margin-bottom-small">
+      <h1 class="main-heading margin-bottom-big">Bulls And Cows</h1>
+      <button class="how-to-play margin-bottom-small">How to play?</button>
+      <div class="description-box">
+        <button id="btn-close">
+          <ion-icon class="icon-close" name="close-outline"></ion-icon>
+        </button>
+        <div class="description">
+          <p class="heading-how margin-bottom-small">How to play?</p>
+          <p>
+            The goal of the game is to guess a 4 digit number. <br />
+            Each digit is a number between 1 to 10. <br />
+            If you got the number and its position right it's called a Bull,
+            <br />
+            and your number will be replaced by the letter "A". <br />
+            If you got the number right but in a wrong position it's called a
+            Cow,
+            <br />
+            and your number will be replaced by the letter "B". <br />
+            If you got both number and position wrong, <br />
+            your number will be returned. You have 10 tries. <br />
+            Let's see if you'll get it!
+          </p>
+        </div>
+      </div>
+      <br />
+    </header>
+    <main class="main-container">
+      <div class="game-box">
+        <div class="input-container margin-bottom-small">
+          <div class="flex">
+            <input id="users-input-1" type="text" />
+            <input id="users-input-2" type="text" />
+            <input id="users-input-3" type="text" />
+            <input id="users-input-4" type="text" />
+          </div>
+        </div>
+        <br />
+
+        <button id="submit" class="btn">submit</button>
+        <p id="display-guess" class="margin-bottom-small"></p>
+        <p id="result" class="margin-bottom-big"></p>
+      </div>
+      <div class="tries-box">
+        <p class="heading">Number of tries:</p>
+        <p class="num-tries">10</p>
+      </div>
+      <div>
+        <button id="restart" class="btn hidden">Restart Game</button>
+      </div>
+    </main>
+  </body>
+</html>
