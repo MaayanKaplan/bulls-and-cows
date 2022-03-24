@@ -18,6 +18,9 @@ html {
   margin-bottom: 30px;
 }
 
+.margin-top {
+  margin-top: 50px;
+}
 .hidden {
   visibility: hidden;
 }

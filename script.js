@@ -9,7 +9,7 @@ let usersGuessedNum3 = document.querySelector("#users-input-3");
 let usersGuessedNum4 = document.querySelector("#users-input-4");
 let submitButton = document.querySelector("#submit");
 let displayGuessedNum = document.querySelector("#display-guess");
-let youWonAnnouncment = document.querySelector("#result");
+let announcment = document.querySelector("#result");
 let retriesNumber = document.querySelector(".num-tries");
 let restartButton = document.querySelector("#restart");
 
@@ -52,7 +52,7 @@ const restartGame = () => {
   usersGuessedNum3.value = "";
   usersGuessedNum4.value = "";
   displayGuessedNum.textContent = "";
-  retriesNumber.textContent = "10";
+  retriesNumber.textContent = 10;
 
   retries = 0;
   secretNumber = generateNumber();
@@ -95,14 +95,14 @@ submitButton.addEventListener("click", () => {
   retriesNumber.textContent = 10 - retries;
   displayGuessedNum.textContent = str;
   if (str === "AAAA") {
-    youWonAnnouncment.textContent = "Congradulations! You Won!";
+    announcment.textContent = "Congradulations! You Won!";
 
     restartButton.classList.remove("hidden");
     restartButton.classList.add("visible");
   }
 
   if (retries === 10) {
-    youWonAnnouncment.textContent = "You lost! Try Again!";
+    announcment.textContent = "You lost! Try Again!";
 
     restartButton.classList.remove("hidden");
     restartButton.classList.add("visible");
