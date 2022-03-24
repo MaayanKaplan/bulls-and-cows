@@ -44,8 +44,8 @@ const restartGame = () => {
   restartButton.classList.remove("visible");
   restartButton.classList.add("hidden");
 
-  youWonAnnouncment.classList.add("hidden");
-  youWonAnnouncment.classList.remove("visible");
+  announcment.classList.add("hidden");
+  announcment.classList.remove("visible");
 
   usersGuessedNum1.value = "";
   usersGuessedNum2.value = "";
