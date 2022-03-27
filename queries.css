@@ -117,11 +117,15 @@
 /* 560px */
 @media (max-width: 35em) {
   .main-heading {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .how-to-play {
     font-size: 1.8rem;
+  }
+
+  .flex {
+    gap: 5px;
   }
 
   #users-input-1 {
