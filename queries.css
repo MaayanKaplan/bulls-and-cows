@@ -113,8 +113,8 @@
     font-size: 1.6rem;
   }
 
-  /* 560px */
-  @media (max-width: 35em) {
+  /* 600px */
+  @media (max-width: 37.5em) {
     .main-heading {
       font-size: 2rem;
       margin-bottom: 20px;
