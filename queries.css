@@ -111,9 +111,10 @@
 
   .lets {
     font-size: 1.6rem;
+  }
 
-    .main-container {
-      grid-template-columns: 1fr;
+  .main-container {
+    grid-template-columns: 1fr;
   }
 
   /* 600px */
