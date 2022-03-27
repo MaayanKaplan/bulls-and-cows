@@ -95,7 +95,7 @@ submitButton.addEventListener("click", () => {
   retriesNumber.textContent = 10 - retries;
   displayGuessedNum.textContent = str;
   if (str === "AAAA") {
-    announcment.textContent = "Congradulations! You Won!";
+    announcment.textContent = "Good Job! You Won!";
 
     restartButton.classList.remove("hidden");
     restartButton.classList.add("visible");
