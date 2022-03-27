@@ -104,61 +104,71 @@
   }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4;
+    margin-bottom: 10px;
   }
 
-
-.lets {
-  font-size: 1.8rem;
-}
-
-
-/* 560px */
-@media (max-width: 35em) {
-  .main-heading {
-    font-size: 2.4rem;
+  .lets {
+    font-size: 1.6rem;
   }
 
-  .how-to-play {
-    font-size: 1.8rem;
-  }
+  /* 560px */
+  @media (max-width: 35em) {
+    .main-heading {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
 
-  .flex {
-    gap: 5px;
-  }
+    .how-to-play {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
 
-  #users-input-1 {
-    width: 50px;
-    height: 50px;
-    font-size: 1.8rem;
-  }
-  #users-input-2 {
-    width: 50px;
-    height: 50px;
-    font-size: 1.8rem;
-  }
-  #users-input-3 {
-    width: 50px;
-    height: 50px;
-    font-size: 1.8rem;
-  }
-  #users-input-4 {
-    width: 50px;
-    height: 50px;
-    font-size: 1.8rem;
-  }
+    .flex {
+      gap: 10px;
+    }
 
-  #result {
-    font-size: 2rem;
-  }
+    #users-input-1 {
+      width: 50px;
+      height: 50px;
+      font-size: 1.4rem;
+    }
+    #users-input-2 {
+      width: 50px;
+      height: 50px;
+      font-size: 1.4rem;
+    }
+    #users-input-3 {
+      width: 50px;
+      height: 50px;
+      font-size: 1.4rem;
+    }
+    #users-input-4 {
+      width: 50px;
+      height: 50px;
+      font-size: 1.4rem;
+    }
 
-  .heading {
-    font-size: 1.8rem;
-  }
+    #result {
+      font-size: 1.8rem;
+    }
 
-  .btn {
-    font-size: 1.2rem;
-    padding: 7.5px 15px;
+    .heading {
+      font-size: 1.4rem;
+    }
+
+    .tries-num {
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      padding: 7.5px 15px;
+    }
+
+    .main-container {
+      grid-template-columns: 1fr;
+    }
   }
 }
